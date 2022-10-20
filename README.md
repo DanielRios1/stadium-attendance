@@ -4,7 +4,7 @@ Este trabajo trata de un análisis de un conjunto de datos del año 2016, que co
 El dataset contiene valores nulos en varias de sus columnas, como ‘Climate’, ‘Literacy’, ‘Phones’, ‘Birthrate’, ‘Deathrate’, 'UEFA_Rank' y 'Attendance'. 
 Para la columna 'Climate' se rellenaron los valores nulos generando promedios de clima para cada región del país respectivo. Los valores nulos de las columnas ‘Literacy’, ‘Phones’, ‘Birthrate’ y ‘Deathrate’, no pudieron ser completados, por lo que esos registros fueron eliminados. La columna ‘UEFA_Rank’ fue eliminada, ya que no era necesaria para el trabajo.
 Se generaron dos dataframe, uno con los registros que poseen un valor válido en ‘Attendance’ y otro para los que tienen un valor nulo en dicha columna.
-Finalmente, en el dataframe con valores válidos para 'Attendance' se creo una columna nueva llamada ‘ratio_att’, que nace a partir de la división de ‘Attendance’ por ‘Population’ y que se refiere al ratio entre la asistencia a los estadios en función de la población.
+Finalmente, en el dataframe con valores válidos para 'Attendance' se creo una columna nueva llamada ‘ratio_att’, que nace a partir de la división de ‘Attendance’ por ‘Population’ y que se refiere al ratio entre la asistencia a los estadios de fútbol y la población de cada país.
 
 ## Visualizaciones
 ![Image](https://github.com/DanielRios1/stadium-attendance/blob/main/dist_relev.png)
@@ -40,21 +40,3 @@ En general se observan buenos resultados de predicción para casi todos los paí
 ## Conclusiones
 En general las variables del dataset no logran explicar satisfactoriamente nuestra variable objetivo. Probablemente existan otras variables que afecten la asistencia a los estadios, como por ejemplo el grado de futbolización del país o la competitividad del campeonato.
 Queda pendiente la aplicación del modelo más exitoso a la parte del dataset que no tenía datos de asistencia a los estadios, para determinar como se comporta el modelo en condiciones de aprendizaje no supervisado.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
